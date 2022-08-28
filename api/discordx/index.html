@@ -1,0 +1,448 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>Documentation</title><meta name="description" content="Documentation for Documentation"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container">
+<div class="table-cell" id="tsd-search" data-base=".">
+<div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
+<ul class="results">
+<li class="state loading">Preparing search index...</li>
+<li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">Documentation</a></div>
+<div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
+<div class="container container-main">
+<div class="col-8 col-content">
+<div class="tsd-page-title">
+<h2>Documentation</h2></div>
+<div class="tsd-panel tsd-typography"><div>
+  <p align="center">
+    <a href="https://discordx.js.org" target="_blank" rel="nofollow">
+      <img src="https://discordx.js.org/discordx.svg" width="546" />
+    </a>
+  </p>
+  <div align="center" class="badge-container">
+    <a href="https://discordx.js.org/discord"
+      ><img
+        src="https://img.shields.io/discord/874802018361950248?color=5865F2&logo=discord&logoColor=white"
+        alt="Discord server"
+    /></a>
+    <a href="https://www.npmjs.com/package/discordx"
+      ><img
+        src="https://img.shields.io/npm/v/discordx.svg?maxAge=3600"
+        alt="NPM version"
+    /></a>
+    <a href="https://www.npmjs.com/package/discordx"
+      ><img
+        src="https://img.shields.io/npm/dt/discordx.svg?maxAge=3600"
+        alt="NPM downloads"
+    /></a>
+    <a href="https://github.com/discordx-ts/discordx/actions"
+      ><img
+        src="https://github.com/discordx-ts/discordx/workflows/Build/badge.svg"
+        alt="Build status"
+    /></a>
+    <a href="https://www.paypal.me/vijayxmeena"
+      ><img
+        src="https://img.shields.io/badge/donate-paypal-F96854.svg"
+        alt="paypal"
+    /></a>
+  </div>
+  <p align="center">
+    <b> Create a discord bot with TypeScript and Decorators! </b>
+  </p>
+</div>
+
+
+<a href="#📖-introduction" id="📖-introduction" style="color: inherit; text-decoration: none;">
+  <h1>📖 Introduction</h1>
+</a>
+<p>This module is an extension of <strong><a href="https://discord.js.org">discord.<strong>js</strong></a></strong>, so the internal behavior (methods, properties, ...) is the same.</p>
+<p>This library allows you to use TypeScript decorators on discord.<strong>js</strong>, it simplifies your code and improves the readability!</p>
+
+<a href="#💻-installation" id="💻-installation" style="color: inherit; text-decoration: none;">
+  <h1>💻 <a href="https://discordx.js.org/docs/discordx/getting-started">Installation</a></h1>
+</a>
+<blockquote>
+<p>Version 16.6.0 or newer of <a href="https://nodejs.org/">Node.js</a> is required</p>
+</blockquote>
+<pre><code><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-0">install</span><span class="hl-1"> </span><span class="hl-0">discordx</span><br/><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-0">add</span><span class="hl-1"> </span><span class="hl-0">discordx</span>
+</code></pre>
+<blockquote>
+<p><strong><a href="https://discordx.js.org/docs/discordx/getting-started#installation">installation guide</a></strong></p>
+</blockquote>
+<blockquote>
+<p><strong><a href="https://github.com/discordx-ts/discordx/tree/main/packages/create-discordx#-introduction">one-click installation</a></strong></p>
+</blockquote>
+
+<a href="#📜-documentation" id="📜-documentation" style="color: inherit; text-decoration: none;">
+  <h1>📜 Documentation</h1>
+</a>
+<blockquote>
+<p><strong><a href="https://discordx.js.org">discordx.js.org</a></strong></p>
+</blockquote>
+<blockquote>
+<p><strong><a href="https://dev.to/oceanroleplay/series/14317">Tutorials (dev.to)</a></strong></p>
+</blockquote>
+
+<a href="#🤖-bot-examples" id="🤖-bot-examples" style="color: inherit; text-decoration: none;">
+  <h1>🤖 Bot Examples</h1>
+</a>
+<blockquote>
+<p><strong><a href="https://github.com/discordx-ts/templates">discordx-templates</a></strong> (starter repo)</p>
+</blockquote>
+<blockquote>
+<p><strong><a href="https://github.com/discordx-ts/templates/tree/main/4-music-player-ytdl">music bot (ytdl)</a></strong></p>
+</blockquote>
+<blockquote>
+<p><strong><a href="https://github.com/discordx-ts/templates/tree/main/5-music-player-lavalink">lavalink bot</a></strong></p>
+</blockquote>
+<blockquote>
+<p><strong><a href="https://github.com/VictoriqueMoe/Shana">Shana</a></strong> from <a href="https://github.com/VictoriqueMoe">@VictoriqueMoe</a></p>
+</blockquote>
+
+<a href="#💡-why-discordx" id="💡-why-discordx" style="color: inherit; text-decoration: none;">
+  <h1>💡 Why discordx?</h1>
+</a>
+<p>With <code>discordx</code>, we intend to provide the latest up-to-date package to easily build feature-rich bots with multi-bot compatibility, simple commands, pagination, music, and much more. <strong>Updated daily with discord.js changes</strong>.</p>
+<p>Try discordx now with <a href="https://codesandbox.io/s/github/discordx-ts/templates">CodeSandbox</a></p>
+<p>If you have any issues or feature requests, Please open an issue at <a href="https://github.com/discordx-ts/discordx/issues">GitHub</a> or join <a href="https://discordx.js.org/discord">discord server</a></p>
+
+<a href="#🆕-features" id="🆕-features" style="color: inherit; text-decoration: none;">
+  <h1>🆕 Features</h1>
+</a>
+<ul>
+<li>Support multiple bots in a single nodejs instance (<code>@Bot</code>)</li>
+<li><code>@SimpleCommand</code> to use old fashioned command, such as <code>!hello world</code></li>
+<li><code>@SimpleCommandOption</code> parse and define command options like <code>@SlashOption</code></li>
+<li><code>client.initApplicationCommands</code> to create/update/remove discord application commands</li>
+<li>Handler for all discord interactions (slash/button/menu/context)</li>
+<li>Support TSyringe and TypeDI</li>
+<li>Support ECMAScript</li>
+</ul>
+
+<a href="#🧮-packages" id="🧮-packages" style="color: inherit; text-decoration: none;">
+  <h1>🧮 Packages</h1>
+</a>
+<p>Here are more packages from us to extend the functionality of your Discord bot.</p>
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.npmjs.com/package/discordx"><code>create-discordx</code></a></td>
+<td>Create discordx apps with one command</td>
+</tr>
+<tr>
+<td><a href="https://www.npmjs.com/package/discordx"><code>discordx</code></a></td>
+<td>Create a discord bot with TypeScript and Decorators!</td>
+</tr>
+<tr>
+<td><a href="https://www.npmjs.com/package/@discordx/changelog"><code>@discordx/changelog</code></a></td>
+<td>Changelog generator, written in TypeScript with Node.js</td>
+</tr>
+<tr>
+<td><a href="https://www.npmjs.com/package/@discordx/di"><code>@discordx/di</code></a></td>
+<td>Dependency injection service with TSyringe support</td>
+</tr>
+<tr>
+<td><a href="https://www.npmjs.com/package/@discordx/importer"><code>@discordx/importer</code></a></td>
+<td>Import solution for ESM and CJS</td>
+</tr>
+<tr>
+<td><a href="https://www.npmjs.com/package/@discordx/internal"><code>@discordx/internal</code></a></td>
+<td>discordx internal methods, can be used for external projects</td>
+</tr>
+<tr>
+<td><a href="https://www.npmjs.com/package/@discordx/koa"><code>@discordx/koa</code></a></td>
+<td>Create rest api server with Typescript and Decorators</td>
+</tr>
+<tr>
+<td><a href="https://www.npmjs.com/package/@discordx/lava-player"><code>@discordx/lava-player</code></a></td>
+<td>Create lavalink player</td>
+</tr>
+<tr>
+<td><a href="https://www.npmjs.com/package/@discordx/lava-queue"><code>@discordx/lava-queue</code></a></td>
+<td>Create queue system for lavalink player</td>
+</tr>
+<tr>
+<td><a href="https://www.npmjs.com/package/@discordx/music"><code>@discordx/music</code></a></td>
+<td>Create discord music player easily</td>
+</tr>
+<tr>
+<td><a href="https://www.npmjs.com/package/@discordx/pagination"><code>@discordx/pagination</code></a></td>
+<td>Add pagination to your discord bot</td>
+</tr>
+<tr>
+<td><a href="https://www.npmjs.com/package/@discordx/socket.io"><code>@discordx/socket.io</code></a></td>
+<td>Create socket.io server with Typescript and Decorators</td>
+</tr>
+<tr>
+<td><a href="https://www.npmjs.com/package/@discordx/utilities"><code>@discordx/utilities</code></a></td>
+<td>Create own group with <code>@Category</code> and guards</td>
+</tr>
+<tr>
+<td><a href="https://www.npmjs.com/package/discord-spams"><code>discord-spams</code></a></td>
+<td>Tiny but powerful discord spam protection library</td>
+</tr>
+</tbody></table>
+
+<a href="#📔-decorators" id="📔-decorators" style="color: inherit; text-decoration: none;">
+  <h1>📔 Decorators</h1>
+</a>
+<p>There is a whole system that allows you to implement complex slash/simple commands and handle interactions like button, select-menu, context-menu etc.</p>
+
+<a href="#general" id="general" style="color: inherit; text-decoration: none;">
+  <h2>General</h2>
+</a>
+<ul>
+<li><a href="https://discordx.js.org/docs/discordx/decorators/general/discord"><code>@Discord</code></a></li>
+<li><a href="https://discordx.js.org/docs/discordx/decorators/general/guard"><code>@Guard</code></a></li>
+<li><a href="https://discordx.js.org/docs/discordx/decorators/general/guild"><code>@Guild</code></a></li>
+<li><a href="https://discordx.js.org/docs/discordx/decorators/general/bot"><code>@Bot</code></a></li>
+<li><a href="https://discordx.js.org/docs/discordx/decorators/general/on"><code>@On</code></a></li>
+<li><a href="https://discordx.js.org/docs/discordx/decorators/general/once"><code>@Once</code></a></li>
+<li><a href="https://discordx.js.org/docs/discordx/decorators/general/once"><code>@Once</code></a></li>
+<li><a href="https://discordx.js.org/docs/discordx/decorators/general/reaction"><code>@Reaction</code></a></li>
+</ul>
+
+<a href="#commands" id="commands" style="color: inherit; text-decoration: none;">
+  <h2>Commands</h2>
+</a>
+<ul>
+<li><a href="https://discordx.js.org/docs/discordx/decorators/command/slash"><code>@Slash</code></a></li>
+<li><a href="https://discordx.js.org/docs/discordx/decorators/command/slash-choice"><code>@SlashChoice</code></a></li>
+<li><a href="https://discordx.js.org/docs/discordx/decorators/command/slash-group"><code>@SlashGroup</code></a></li>
+<li><a href="https://discordx.js.org/docs/discordx/decorators/command/slash-option"><code>@SlashOption</code></a></li>
+<li><a href="https://discordx.js.org/docs/discordx/decorators/command/simple-command"><code>@SimpleCommand</code></a></li>
+<li><a href="https://discordx.js.org/docs/discordx/decorators/command/simple-command-option"><code>@SimpleCommandOption</code></a></li>
+</ul>
+
+<a href="#gui-interactions" id="gui-interactions" style="color: inherit; text-decoration: none;">
+  <h2>GUI Interactions</h2>
+</a>
+<ul>
+<li><a href="https://discordx.js.org/docs/discordx/decorators/gui/button-component"><code>@ButtonComponent</code></a></li>
+<li><a href="https://discordx.js.org/docs/discordx/decorators/gui/context-menu"><code>@ContextMenu</code></a></li>
+<li><a href="https://discordx.js.org/docs/discordx/decorators/gui/modal-component"><code>@ModalComponent</code></a></li>
+<li><a href="https://discordx.js.org/docs/discordx/decorators/gui/select-menu-component"><code>@SelectMenuComponent</code></a></li>
+</ul>
+
+<a href="#📟-slash" id="📟-slash" style="color: inherit; text-decoration: none;">
+  <h1>📟 <a href="https://discordx.js.org/docs/discordx/decorators/command/slash">@Slash</a></h1>
+</a>
+<p>Discord has it&#39;s own command system now, you can simply declare commands and use Slash commands this way</p>
+<pre><code class="language-ts"><span class="hl-1">@</span><span class="hl-2">Discord</span><span class="hl-1">()</span><br/><span class="hl-3">class</span><span class="hl-1"> </span><span class="hl-4">Example</span><span class="hl-1"> {</span><br/><span class="hl-1">  @</span><span class="hl-2">Slash</span><span class="hl-1">({ </span><span class="hl-0">name:</span><span class="hl-1"> </span><span class="hl-5">&quot;hello&quot;</span><span class="hl-1"> })</span><br/><span class="hl-1">  </span><span class="hl-2">hello</span><span class="hl-1">(</span><br/><span class="hl-1">    @</span><span class="hl-2">SlashOption</span><span class="hl-1">({ </span><span class="hl-0">name:</span><span class="hl-1"> </span><span class="hl-5">&quot;message&quot;</span><span class="hl-1"> }) </span><span class="hl-0">message</span><span class="hl-1">: </span><span class="hl-4">string</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">interaction</span><span class="hl-1">: </span><span class="hl-4">CommandInteraction</span><br/><span class="hl-1">  ): </span><span class="hl-4">void</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-2">reply</span><span class="hl-1">(</span><span class="hl-5">`:wave: from </span><span class="hl-3">${</span><span class="hl-0">interaction</span><span class="hl-6">.</span><span class="hl-0">user</span><span class="hl-3">}</span><span class="hl-5">: </span><span class="hl-3">${</span><span class="hl-0">message</span><span class="hl-3">}</span><span class="hl-5">`</span><span class="hl-1">);</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">}</span>
+</code></pre>
+
+<a href="#📟-buttoncomponent" id="📟-buttoncomponent" style="color: inherit; text-decoration: none;">
+  <h1>📟 <a href="https://discordx.js.org/docs/discordx/decorators/gui/button-component">@ButtonComponent</a></h1>
+</a>
+<p>Create discord button handler with ease!</p>
+<pre><code class="language-ts"><span class="hl-1">@</span><span class="hl-2">Discord</span><span class="hl-1">()</span><br/><span class="hl-3">class</span><span class="hl-1"> </span><span class="hl-4">Example</span><span class="hl-1"> {</span><br/><span class="hl-1">  @</span><span class="hl-2">ButtonComponent</span><span class="hl-1">({ </span><span class="hl-0">id:</span><span class="hl-1"> </span><span class="hl-5">&quot;hello&quot;</span><span class="hl-1"> })</span><br/><span class="hl-1">  </span><span class="hl-2">handler</span><span class="hl-1">(</span><span class="hl-0">interaction</span><span class="hl-1">: </span><span class="hl-4">ButtonInteraction</span><span class="hl-1">): </span><span class="hl-4">void</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-2">reply</span><span class="hl-1">(</span><span class="hl-5">&quot;:wave:&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">  }</span><br/><br/><span class="hl-1">  @</span><span class="hl-2">ButtonComponent</span><span class="hl-1">({ </span><span class="hl-0">id:</span><span class="hl-1"> </span><span class="hl-5">&quot;hello&quot;</span><span class="hl-1"> })</span><br/><span class="hl-1">  </span><span class="hl-2">handler2</span><span class="hl-1">(</span><span class="hl-0">interaction</span><span class="hl-1">: </span><span class="hl-4">ButtonInteraction</span><span class="hl-1">): </span><span class="hl-4">void</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-2">log</span><span class="hl-1">(</span><span class="hl-5">`</span><span class="hl-3">${</span><span class="hl-0">interaction</span><span class="hl-6">.</span><span class="hl-0">user</span><span class="hl-3">}</span><span class="hl-5"> says hello`</span><span class="hl-1">);</span><br/><span class="hl-1">  }</span><br/><br/><span class="hl-1">  @</span><span class="hl-2">Slash</span><span class="hl-1">()</span><br/><span class="hl-1">  </span><span class="hl-2">test</span><span class="hl-1">(</span><span class="hl-0">interaction</span><span class="hl-1">: </span><span class="hl-4">CommandInteraction</span><span class="hl-1">): </span><span class="hl-4">void</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-7">btn</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-2">ButtonBuilder</span><span class="hl-1">()</span><br/><span class="hl-1">      .</span><span class="hl-2">setLabel</span><span class="hl-1">(</span><span class="hl-5">&quot;Hello&quot;</span><span class="hl-1">)</span><br/><span class="hl-1">      .</span><span class="hl-2">setStyle</span><span class="hl-1">(</span><span class="hl-0">ButtonStyle</span><span class="hl-1">.</span><span class="hl-0">Primary</span><span class="hl-1">)</span><br/><span class="hl-1">      .</span><span class="hl-2">setCustomId</span><span class="hl-1">(</span><span class="hl-5">&quot;hello&quot;</span><span class="hl-1">);</span><br/><br/><span class="hl-1">    </span><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-7">buttonRow</span><span class="hl-1"> =</span><br/><span class="hl-1">      </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-2">ActionRowBuilder</span><span class="hl-1">&lt;</span><span class="hl-4">MessageActionRowComponentBuilder</span><span class="hl-1">&gt;().</span><span class="hl-2">addComponents</span><span class="hl-1">(</span><br/><span class="hl-1">        </span><span class="hl-0">btn</span><br/><span class="hl-1">      );</span><br/><br/><span class="hl-1">    </span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-2">reply</span><span class="hl-1">({</span><br/><span class="hl-1">      </span><span class="hl-0">components:</span><span class="hl-1"> [</span><span class="hl-0">buttonRow</span><span class="hl-1">],</span><br/><span class="hl-1">    });</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">}</span>
+</code></pre>
+
+<a href="#📟-selectmenucomponent" id="📟-selectmenucomponent" style="color: inherit; text-decoration: none;">
+  <h1>📟 <a href="https://discordx.js.org/docs/discordx/decorators/gui/select-menu-component">@SelectMenuComponent</a></h1>
+</a>
+<p>Create discord select menu handler with ease!</p>
+<pre><code class="language-ts"><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-7">roles</span><span class="hl-1"> = [</span><br/><span class="hl-1">  { </span><span class="hl-0">label:</span><span class="hl-1"> </span><span class="hl-5">&quot;Principal&quot;</span><span class="hl-1">, </span><span class="hl-0">value:</span><span class="hl-1"> </span><span class="hl-5">&quot;principal&quot;</span><span class="hl-1"> },</span><br/><span class="hl-1">  { </span><span class="hl-0">label:</span><span class="hl-1"> </span><span class="hl-5">&quot;Teacher&quot;</span><span class="hl-1">, </span><span class="hl-0">value:</span><span class="hl-1"> </span><span class="hl-5">&quot;teacher&quot;</span><span class="hl-1"> },</span><br/><span class="hl-1">  { </span><span class="hl-0">label:</span><span class="hl-1"> </span><span class="hl-5">&quot;Student&quot;</span><span class="hl-1">, </span><span class="hl-0">value:</span><span class="hl-1"> </span><span class="hl-5">&quot;student&quot;</span><span class="hl-1"> },</span><br/><span class="hl-1">];</span><br/><br/><span class="hl-1">@</span><span class="hl-2">Discord</span><span class="hl-1">()</span><br/><span class="hl-3">class</span><span class="hl-1"> </span><span class="hl-4">Example</span><span class="hl-1"> {</span><br/><span class="hl-1">  @</span><span class="hl-2">SelectMenuComponent</span><span class="hl-1">({ </span><span class="hl-0">id:</span><span class="hl-1"> </span><span class="hl-5">&quot;role-menu&quot;</span><span class="hl-1"> })</span><br/><span class="hl-1">  </span><span class="hl-3">async</span><span class="hl-1"> </span><span class="hl-2">handle</span><span class="hl-1">(</span><span class="hl-0">interaction</span><span class="hl-1">: </span><span class="hl-4">SelectMenuInteraction</span><span class="hl-1">): </span><span class="hl-4">Promise</span><span class="hl-1">&lt;</span><span class="hl-4">unknown</span><span class="hl-1">&gt; {</span><br/><span class="hl-1">    </span><span class="hl-8">await</span><span class="hl-1"> </span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-2">deferReply</span><span class="hl-1">();</span><br/><br/><span class="hl-1">    </span><span class="hl-9">// extract selected value by member</span><br/><span class="hl-1">    </span><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-7">roleValue</span><span class="hl-1"> = </span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-0">values</span><span class="hl-1">?.[</span><span class="hl-10">0</span><span class="hl-1">];</span><br/><br/><span class="hl-1">    </span><span class="hl-9">// if value not found</span><br/><span class="hl-1">    </span><span class="hl-8">if</span><span class="hl-1"> (!</span><span class="hl-0">roleValue</span><span class="hl-1">) {</span><br/><span class="hl-1">      </span><span class="hl-8">return</span><span class="hl-1"> </span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-2">followUp</span><span class="hl-1">(</span><span class="hl-5">&quot;invalid role id, select again&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">    }</span><br/><br/><span class="hl-1">    </span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-2">followUp</span><span class="hl-1">(</span><br/><span class="hl-1">      </span><span class="hl-5">`you have selected role: </span><span class="hl-3">${</span><br/><span class="hl-6">        </span><span class="hl-0">roles</span><span class="hl-6">.</span><span class="hl-2">find</span><span class="hl-6">((</span><span class="hl-0">r</span><span class="hl-6">) </span><span class="hl-3">=&gt;</span><span class="hl-6"> </span><span class="hl-0">r</span><span class="hl-6">.</span><span class="hl-0">value</span><span class="hl-6"> </span><span class="hl-1">===</span><span class="hl-6"> </span><span class="hl-0">roleValue</span><span class="hl-6">)?.</span><span class="hl-0">label</span><span class="hl-6"> </span><span class="hl-1">??</span><span class="hl-6"> </span><span class="hl-5">&quot;unknown&quot;</span><br/><span class="hl-6">      </span><span class="hl-3">}</span><span class="hl-5">`</span><br/><span class="hl-1">    );</span><br/><span class="hl-1">    </span><span class="hl-8">return</span><span class="hl-1">;</span><br/><span class="hl-1">  }</span><br/><br/><span class="hl-1">  @</span><span class="hl-2">Slash</span><span class="hl-1">({ </span><span class="hl-0">description:</span><span class="hl-1"> </span><span class="hl-5">&quot;roles menu&quot;</span><span class="hl-1">, </span><span class="hl-0">name:</span><span class="hl-1"> </span><span class="hl-5">&quot;my-roles&quot;</span><span class="hl-1"> })</span><br/><span class="hl-1">  </span><span class="hl-3">async</span><span class="hl-1"> </span><span class="hl-2">myRoles</span><span class="hl-1">(</span><span class="hl-0">interaction</span><span class="hl-1">: </span><span class="hl-4">CommandInteraction</span><span class="hl-1">): </span><span class="hl-4">Promise</span><span class="hl-1">&lt;</span><span class="hl-4">unknown</span><span class="hl-1">&gt; {</span><br/><span class="hl-1">    </span><span class="hl-8">await</span><span class="hl-1"> </span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-2">deferReply</span><span class="hl-1">();</span><br/><br/><span class="hl-1">    </span><span class="hl-9">// create menu for roles</span><br/><span class="hl-1">    </span><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-7">menu</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-2">SelectMenuBuilder</span><span class="hl-1">()</span><br/><span class="hl-1">      .</span><span class="hl-2">addOptions</span><span class="hl-1">(</span><span class="hl-0">roles</span><span class="hl-1">)</span><br/><span class="hl-1">      .</span><span class="hl-2">setCustomId</span><span class="hl-1">(</span><span class="hl-5">&quot;role-menu&quot;</span><span class="hl-1">);</span><br/><br/><span class="hl-1">    </span><span class="hl-9">// create a row for message actions</span><br/><span class="hl-1">    </span><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-7">buttonRow</span><span class="hl-1"> =</span><br/><span class="hl-1">      </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-2">ActionRowBuilder</span><span class="hl-1">&lt;</span><span class="hl-4">MessageActionRowComponentBuilder</span><span class="hl-1">&gt;().</span><span class="hl-2">addComponents</span><span class="hl-1">(</span><br/><span class="hl-1">        </span><span class="hl-0">menu</span><br/><span class="hl-1">      );</span><br/><br/><span class="hl-1">    </span><span class="hl-9">// send it</span><br/><span class="hl-1">    </span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-2">editReply</span><span class="hl-1">({</span><br/><span class="hl-1">      </span><span class="hl-0">components:</span><span class="hl-1"> [</span><span class="hl-0">buttonRow</span><span class="hl-1">],</span><br/><span class="hl-1">      </span><span class="hl-0">content:</span><span class="hl-1"> </span><span class="hl-5">&quot;select your role!&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    });</span><br/><span class="hl-1">    </span><span class="hl-8">return</span><span class="hl-1">;</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">}</span>
+</code></pre>
+
+<a href="#📟-contextmenu" id="📟-contextmenu" style="color: inherit; text-decoration: none;">
+  <h1>📟 <a href="https://discordx.js.org/docs/discordx/decorators/gui/context-menu">@ContextMenu</a></h1>
+</a>
+<p>Create discord context menu options with ease!</p>
+<pre><code class="language-ts"><span class="hl-1">@</span><span class="hl-2">Discord</span><span class="hl-1">()</span><br/><span class="hl-3">class</span><span class="hl-1"> </span><span class="hl-4">Example</span><span class="hl-1"> {</span><br/><span class="hl-1">  @</span><span class="hl-2">ContextMenu</span><span class="hl-1">({</span><br/><span class="hl-1">    </span><span class="hl-0">name:</span><span class="hl-1"> </span><span class="hl-5">&quot;Hello from discordx&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">type:</span><span class="hl-1"> </span><span class="hl-0">ApplicationCommandType</span><span class="hl-1">.</span><span class="hl-0">Message</span><span class="hl-1">,</span><br/><span class="hl-1">  })</span><br/><span class="hl-1">  </span><span class="hl-2">messageHandler</span><span class="hl-1">(</span><span class="hl-0">interaction</span><span class="hl-1">: </span><span class="hl-4">MessageContextMenuCommandInteraction</span><span class="hl-1">): </span><span class="hl-4">void</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-2">log</span><span class="hl-1">(</span><span class="hl-5">&quot;I am message&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">    </span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-2">reply</span><span class="hl-1">(</span><span class="hl-5">&quot;message interaction works&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">  }</span><br/><br/><span class="hl-1">  @</span><span class="hl-2">ContextMenu</span><span class="hl-1">({</span><br/><span class="hl-1">    </span><span class="hl-0">name:</span><span class="hl-1"> </span><span class="hl-5">&quot;Hello from discordx&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">type:</span><span class="hl-1"> </span><span class="hl-0">ApplicationCommandType</span><span class="hl-1">.</span><span class="hl-0">User</span><span class="hl-1">,</span><br/><span class="hl-1">  })</span><br/><span class="hl-1">  </span><span class="hl-2">userHandler</span><span class="hl-1">(</span><span class="hl-0">interaction</span><span class="hl-1">: </span><span class="hl-4">UserContextMenuCommandInteraction</span><span class="hl-1">): </span><span class="hl-4">void</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-2">log</span><span class="hl-1">(</span><span class="hl-5">`Selected user: </span><span class="hl-3">${</span><span class="hl-0">interaction</span><span class="hl-6">.</span><span class="hl-0">targetId</span><span class="hl-3">}</span><span class="hl-5">`</span><span class="hl-1">);</span><br/><span class="hl-1">    </span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-2">reply</span><span class="hl-1">(</span><span class="hl-5">&quot;user interaction works&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">}</span>
+</code></pre>
+
+<a href="#📟-modalcomponent" id="📟-modalcomponent" style="color: inherit; text-decoration: none;">
+  <h1>📟 <a href="https://discordx.js.org/docs/discordx/decorators/gui/modal-component">@ModalComponent</a></h1>
+</a>
+<p>Create discord modal with ease!</p>
+<pre><code class="language-ts"><span class="hl-1">@</span><span class="hl-2">Discord</span><span class="hl-1">()</span><br/><span class="hl-3">class</span><span class="hl-1"> </span><span class="hl-4">Example</span><span class="hl-1"> {</span><br/><span class="hl-1">  @</span><span class="hl-2">Slash</span><span class="hl-1">()</span><br/><span class="hl-1">  </span><span class="hl-2">modal</span><span class="hl-1">(</span><span class="hl-0">interaction</span><span class="hl-1">: </span><span class="hl-4">CommandInteraction</span><span class="hl-1">): </span><span class="hl-4">void</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-9">// Create the modal</span><br/><span class="hl-1">    </span><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-7">modal</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-2">ModalBuilder</span><span class="hl-1">()</span><br/><span class="hl-1">      .</span><span class="hl-2">setTitle</span><span class="hl-1">(</span><span class="hl-5">&quot;My Awesome Form&quot;</span><span class="hl-1">)</span><br/><span class="hl-1">      .</span><span class="hl-2">setCustomId</span><span class="hl-1">(</span><span class="hl-5">&quot;AwesomeForm&quot;</span><span class="hl-1">);</span><br/><br/><span class="hl-1">    </span><span class="hl-9">// Create text input fields</span><br/><span class="hl-1">    </span><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-7">tvShowInputComponent</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-2">TextInputBuilder</span><span class="hl-1">()</span><br/><span class="hl-1">      .</span><span class="hl-2">setCustomId</span><span class="hl-1">(</span><span class="hl-5">&quot;tvField&quot;</span><span class="hl-1">)</span><br/><span class="hl-1">      .</span><span class="hl-2">setLabel</span><span class="hl-1">(</span><span class="hl-5">&quot;Favorite TV show&quot;</span><span class="hl-1">)</span><br/><span class="hl-1">      .</span><span class="hl-2">setStyle</span><span class="hl-1">(</span><span class="hl-0">TextInputStyle</span><span class="hl-1">.</span><span class="hl-0">Short</span><span class="hl-1">);</span><br/><br/><span class="hl-1">    </span><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-7">haikuInputComponent</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-2">TextInputBuilder</span><span class="hl-1">()</span><br/><span class="hl-1">      .</span><span class="hl-2">setCustomId</span><span class="hl-1">(</span><span class="hl-5">&quot;haikuField&quot;</span><span class="hl-1">)</span><br/><span class="hl-1">      .</span><span class="hl-2">setLabel</span><span class="hl-1">(</span><span class="hl-5">&quot;Write down your favorite haiku&quot;</span><span class="hl-1">)</span><br/><span class="hl-1">      .</span><span class="hl-2">setStyle</span><span class="hl-1">(</span><span class="hl-0">TextInputStyle</span><span class="hl-1">.</span><span class="hl-0">Paragraph</span><span class="hl-1">);</span><br/><br/><span class="hl-1">    </span><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-7">row1</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-2">ActionRowBuilder</span><span class="hl-1">&lt;</span><span class="hl-4">TextInputBuilder</span><span class="hl-1">&gt;().</span><span class="hl-2">addComponents</span><span class="hl-1">(</span><br/><span class="hl-1">      </span><span class="hl-0">tvShowInputComponent</span><br/><span class="hl-1">    );</span><br/><br/><span class="hl-1">    </span><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-7">row2</span><span class="hl-1"> = </span><span class="hl-3">new</span><span class="hl-1"> </span><span class="hl-2">ActionRowBuilder</span><span class="hl-1">&lt;</span><span class="hl-4">TextInputBuilder</span><span class="hl-1">&gt;().</span><span class="hl-2">addComponents</span><span class="hl-1">(</span><br/><span class="hl-1">      </span><span class="hl-0">haikuInputComponent</span><br/><span class="hl-1">    );</span><br/><br/><span class="hl-1">    </span><span class="hl-9">// Add action rows to form</span><br/><span class="hl-1">    </span><span class="hl-0">modal</span><span class="hl-1">.</span><span class="hl-2">addComponents</span><span class="hl-1">(</span><span class="hl-0">row1</span><span class="hl-1">, </span><span class="hl-0">row2</span><span class="hl-1">);</span><br/><br/><span class="hl-1">    </span><span class="hl-9">// --- snip ---</span><br/><br/><span class="hl-1">    </span><span class="hl-9">// Present the modal to the user</span><br/><span class="hl-1">    </span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-2">showModal</span><span class="hl-1">(</span><span class="hl-0">modal</span><span class="hl-1">);</span><br/><span class="hl-1">  }</span><br/><br/><span class="hl-1">  @</span><span class="hl-2">ModalComponent</span><span class="hl-1">()</span><br/><span class="hl-1">  </span><span class="hl-3">async</span><span class="hl-1"> </span><span class="hl-2">AwesomeForm</span><span class="hl-1">(</span><span class="hl-0">interaction</span><span class="hl-1">: </span><span class="hl-4">ModalSubmitInteraction</span><span class="hl-1">): </span><span class="hl-4">Promise</span><span class="hl-1">&lt;</span><span class="hl-4">void</span><span class="hl-1">&gt; {</span><br/><span class="hl-1">    </span><span class="hl-3">const</span><span class="hl-1"> [</span><span class="hl-7">favTVShow</span><span class="hl-1">, </span><span class="hl-7">favHaiku</span><span class="hl-1">] = [</span><span class="hl-5">&quot;tvField&quot;</span><span class="hl-1">, </span><span class="hl-5">&quot;haikuField&quot;</span><span class="hl-1">].</span><span class="hl-2">map</span><span class="hl-1">((</span><span class="hl-0">id</span><span class="hl-1">) </span><span class="hl-3">=&gt;</span><br/><span class="hl-1">      </span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-0">fields</span><span class="hl-1">.</span><span class="hl-2">getTextInputValue</span><span class="hl-1">(</span><span class="hl-0">id</span><span class="hl-1">)</span><br/><span class="hl-1">    );</span><br/><br/><span class="hl-1">    </span><span class="hl-8">await</span><span class="hl-1"> </span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-2">reply</span><span class="hl-1">(</span><br/><span class="hl-1">      </span><span class="hl-5">`Favorite TV Show: </span><span class="hl-3">${</span><span class="hl-0">favTVShow</span><span class="hl-3">}</span><span class="hl-5">, Favorite haiku: </span><span class="hl-3">${</span><span class="hl-0">favHaiku</span><span class="hl-3">}</span><span class="hl-5">`</span><br/><span class="hl-1">    );</span><br/><br/><span class="hl-1">    </span><span class="hl-8">return</span><span class="hl-1">;</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">}</span>
+</code></pre>
+
+<a href="#📟-simplecommand" id="📟-simplecommand" style="color: inherit; text-decoration: none;">
+  <h1>📟 <a href="https://discordx.js.org/docs/discordx/decorators/command/simple-command">@SimpleCommand</a></h1>
+</a>
+<p>Create a simple command handler for messages using <code>@SimpleCommand</code>. Example <code>!hello world</code></p>
+<pre><code class="language-ts"><span class="hl-1">@</span><span class="hl-2">Discord</span><span class="hl-1">()</span><br/><span class="hl-3">class</span><span class="hl-1"> </span><span class="hl-4">Example</span><span class="hl-1"> {</span><br/><span class="hl-1">  @</span><span class="hl-2">SimpleCommand</span><span class="hl-1">({ </span><span class="hl-0">aliases:</span><span class="hl-1"> [</span><span class="hl-5">&quot;hey&quot;</span><span class="hl-1">, </span><span class="hl-5">&quot;hi&quot;</span><span class="hl-1">], </span><span class="hl-0">name:</span><span class="hl-1"> </span><span class="hl-5">&quot;hello&quot;</span><span class="hl-1"> })</span><br/><span class="hl-1">  </span><span class="hl-2">hello</span><span class="hl-1">(</span><span class="hl-0">command</span><span class="hl-1">: </span><span class="hl-4">SimpleCommandMessage</span><span class="hl-1">): </span><span class="hl-4">void</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">command</span><span class="hl-1">.</span><span class="hl-0">message</span><span class="hl-1">.</span><span class="hl-2">reply</span><span class="hl-1">(</span><span class="hl-5">&quot;:wave:&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">}</span>
+</code></pre>
+
+<a href="#💡on--once" id="💡on--once" style="color: inherit; text-decoration: none;">
+  <h1>💡<a href="https://discordx.js.org/docs/discordx/decorators/general/on">@On</a> / <a href="https://discordx.js.org/docs/discordx/decorators/general/once">@Once</a></h1>
+</a>
+<p>We can declare methods that will be executed whenever a Discord event is triggered.</p>
+<p>Our methods must be decorated with the <code>@On(event: string)</code> or <code>@Once(event: string)</code> decorator.</p>
+<p>That&#39;s simple, when the event is triggered, the method is called:</p>
+<pre><code class="language-typescript"><span class="hl-1">@</span><span class="hl-2">Discord</span><span class="hl-1">()</span><br/><span class="hl-3">class</span><span class="hl-1"> </span><span class="hl-4">Example</span><span class="hl-1"> {</span><br/><span class="hl-1">  @</span><span class="hl-2">On</span><span class="hl-1">({ </span><span class="hl-0">name:</span><span class="hl-1"> </span><span class="hl-5">&quot;messageCreate&quot;</span><span class="hl-1"> })</span><br/><span class="hl-1">  </span><span class="hl-2">messageCreate</span><span class="hl-1">() {</span><br/><span class="hl-1">    </span><span class="hl-9">// ...</span><br/><span class="hl-1">  }</span><br/><br/><span class="hl-1">  @</span><span class="hl-2">Once</span><span class="hl-1">({ </span><span class="hl-0">name:</span><span class="hl-1"> </span><span class="hl-5">&quot;messageDelete&quot;</span><span class="hl-1"> })</span><br/><span class="hl-1">  </span><span class="hl-2">messageDelete</span><span class="hl-1">() {</span><br/><span class="hl-1">    </span><span class="hl-9">// ...</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">}</span>
+</code></pre>
+
+<a href="#💡reaction" id="💡reaction" style="color: inherit; text-decoration: none;">
+  <h1>💡<a href="https://discordx.js.org/docs/discordx/decorators/general/reaction">@Reaction</a></h1>
+</a>
+<p>Create a reaction handler for messages using <code>@Reaction</code>.</p>
+<pre><code class="language-typescript"><span class="hl-1">@</span><span class="hl-2">Discord</span><span class="hl-1">()</span><br/><span class="hl-3">class</span><span class="hl-1"> </span><span class="hl-4">Example</span><span class="hl-1"> {</span><br/><span class="hl-1">  @</span><span class="hl-2">Reaction</span><span class="hl-1">({ </span><span class="hl-0">emoji:</span><span class="hl-1"> </span><span class="hl-5">&quot;⭐&quot;</span><span class="hl-1">, </span><span class="hl-0">remove:</span><span class="hl-1"> </span><span class="hl-3">true</span><span class="hl-1"> })</span><br/><span class="hl-1">  </span><span class="hl-3">async</span><span class="hl-1"> </span><span class="hl-2">starReaction</span><span class="hl-1">(</span><span class="hl-0">reaction</span><span class="hl-1">: </span><span class="hl-4">MessageReaction</span><span class="hl-1">, </span><span class="hl-0">user</span><span class="hl-1">: </span><span class="hl-4">User</span><span class="hl-1">): </span><span class="hl-4">Promise</span><span class="hl-1">&lt;</span><span class="hl-4">void</span><span class="hl-1">&gt; {</span><br/><span class="hl-1">    </span><span class="hl-8">await</span><span class="hl-1"> </span><span class="hl-0">reaction</span><span class="hl-1">.</span><span class="hl-0">message</span><span class="hl-1">.</span><span class="hl-2">reply</span><span class="hl-1">(</span><span class="hl-5">`Received a </span><span class="hl-3">${</span><span class="hl-0">reaction</span><span class="hl-6">.</span><span class="hl-0">emoji</span><span class="hl-3">}</span><span class="hl-5"> from </span><span class="hl-3">${</span><span class="hl-0">user</span><span class="hl-3">}</span><span class="hl-5">`</span><span class="hl-1">);</span><br/><span class="hl-1">  }</span><br/><br/><span class="hl-1">  @</span><span class="hl-2">Reaction</span><span class="hl-1">({ </span><span class="hl-0">aliases:</span><span class="hl-1"> [</span><span class="hl-5">&quot;📍&quot;</span><span class="hl-1">, </span><span class="hl-5">&quot;custom_emoji&quot;</span><span class="hl-1">], </span><span class="hl-0">emoji:</span><span class="hl-1"> </span><span class="hl-5">&quot;📌&quot;</span><span class="hl-1"> })</span><br/><span class="hl-1">  </span><span class="hl-3">async</span><span class="hl-1"> </span><span class="hl-2">pin</span><span class="hl-1">(</span><span class="hl-0">reaction</span><span class="hl-1">: </span><span class="hl-4">MessageReaction</span><span class="hl-1">): </span><span class="hl-4">Promise</span><span class="hl-1">&lt;</span><span class="hl-4">void</span><span class="hl-1">&gt; {</span><br/><span class="hl-1">    </span><span class="hl-8">await</span><span class="hl-1"> </span><span class="hl-0">reaction</span><span class="hl-1">.</span><span class="hl-0">message</span><span class="hl-1">.</span><span class="hl-2">pin</span><span class="hl-1">();</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">}</span>
+</code></pre>
+
+<a href="#⚔️-guards" id="⚔️-guards" style="color: inherit; text-decoration: none;">
+  <h1>⚔️ <a href="https://discordx.js.org/docs/discordx/decorators/general/guard">Guards</a></h1>
+</a>
+<p>We implemented a guard system that functions like the <a href="https://koajs.com/">Koa</a> middleware system</p>
+<p>You can use functions that are executed before your event to determine if it&#39;s executed. For example, if you want to apply a prefix to the messages, you can simply use the <code>@Guard</code> decorator.</p>
+<p>The order of execution of the guards is done according to their position in the list, so they will be executed in order (from top to bottom).</p>
+<p>Guards can be set for <code>@Slash</code>, <code>@On</code>, <code>@Once</code>, <code>@Discord</code> and globally.</p>
+<pre><code class="language-typescript"><span class="hl-8">import</span><span class="hl-1"> { </span><span class="hl-0">Discord</span><span class="hl-1">, </span><span class="hl-0">On</span><span class="hl-1">, </span><span class="hl-0">Client</span><span class="hl-1">, </span><span class="hl-0">Guard</span><span class="hl-1"> } </span><span class="hl-8">from</span><span class="hl-1"> </span><span class="hl-5">&quot;discordx&quot;</span><span class="hl-1">;</span><br/><span class="hl-8">import</span><span class="hl-1"> { </span><span class="hl-0">NotBot</span><span class="hl-1"> } </span><span class="hl-8">from</span><span class="hl-1"> </span><span class="hl-5">&quot;./NotBot&quot;</span><span class="hl-1">;</span><br/><span class="hl-8">import</span><span class="hl-1"> { </span><span class="hl-0">Prefix</span><span class="hl-1"> } </span><span class="hl-8">from</span><span class="hl-1"> </span><span class="hl-5">&quot;./Prefix&quot;</span><span class="hl-1">;</span><br/><br/><span class="hl-1">@</span><span class="hl-2">Discord</span><span class="hl-1">()</span><br/><span class="hl-3">class</span><span class="hl-1"> </span><span class="hl-4">Example</span><span class="hl-1"> {</span><br/><span class="hl-1">  @</span><span class="hl-2">On</span><span class="hl-1">()</span><br/><span class="hl-1">  @</span><span class="hl-2">Guard</span><span class="hl-1">(</span><br/><span class="hl-1">    </span><span class="hl-0">NotBot</span><span class="hl-1"> </span><span class="hl-9">// You can use multiple guard functions, they are executed in the same order!</span><br/><span class="hl-1">  )</span><br/><span class="hl-1">  </span><span class="hl-2">messageCreate</span><span class="hl-1">([</span><span class="hl-0">message</span><span class="hl-1">]: </span><span class="hl-4">ArgsOf</span><span class="hl-1">&lt;</span><span class="hl-5">&quot;messageCreate&quot;</span><span class="hl-1">&gt;) {</span><br/><span class="hl-1">    </span><span class="hl-8">switch</span><span class="hl-1"> (</span><span class="hl-0">message</span><span class="hl-1">.</span><span class="hl-0">content</span><span class="hl-1">.</span><span class="hl-2">toLowerCase</span><span class="hl-1">()) {</span><br/><span class="hl-1">      </span><span class="hl-8">case</span><span class="hl-1"> </span><span class="hl-5">&quot;hello&quot;</span><span class="hl-1">:</span><br/><span class="hl-1">        </span><span class="hl-0">message</span><span class="hl-1">.</span><span class="hl-2">reply</span><span class="hl-1">(</span><span class="hl-5">&quot;Hello!&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">        </span><span class="hl-8">break</span><span class="hl-1">;</span><br/><span class="hl-1">      </span><span class="hl-8">default</span><span class="hl-1">:</span><br/><span class="hl-1">        </span><span class="hl-0">message</span><span class="hl-1">.</span><span class="hl-2">reply</span><span class="hl-1">(</span><span class="hl-5">&quot;Command not found&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">        </span><span class="hl-8">break</span><span class="hl-1">;</span><br/><span class="hl-1">    }</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">}</span>
+</code></pre>
+
+<a href="#📜-documentation-1" id="📜-documentation-1" style="color: inherit; text-decoration: none;">
+  <h1>📜 Documentation</h1>
+</a>
+<ul>
+<li><a href="https://discordx.js.org">discordx.js.org</a></li>
+<li><a href="https://dev.to/oceanroleplay/series/14317">Tutorials (dev.to)</a></li>
+</ul>
+
+<a href="#☎️-need-help" id="☎️-need-help" style="color: inherit; text-decoration: none;">
+  <h1>☎️ Need help?</h1>
+</a>
+<ul>
+<li><a href="https://discordx.js.org/docs/faq">Check frequently asked questions</a></li>
+<li><a href="https://github.com/discordx-ts/discordx/tree/main/packages/discordx/examples">Check examples</a></li>
+<li>Ask in the community <a href="https://discordx.js.org/discord">Discord server</a></li>
+</ul>
+
+<a href="#💖-thank-you" id="💖-thank-you" style="color: inherit; text-decoration: none;">
+  <h1>💖 Thank you</h1>
+</a>
+<p>You can support <a href="https://www.npmjs.com/package/discordx">discordx</a> by giving it a <a href="https://github.com/discordx-ts/discordx">GitHub</a> star.</p>
+</div></div>
+<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+<div class="tsd-navigation settings">
+<details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility">
+<h4 class="uppercase">Member Visibility</h4><form>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-private" name="private"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Private</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></form></div>
+<div class="tsd-theme-toggle">
+<h4 class="uppercase">Theme</h4><select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<nav class="tsd-navigation primary">
+<details class="tsd-index-accordion" open><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Modules</h3></summary>
+<div class="tsd-accordion-details">
+<ul>
+<li class="current selected"><a href="modules.html">Documentation</a>
+<ul>
+<li class="tsd-kind-namespace"><a href="modules/On.html">On</a></li>
+<li class="tsd-kind-namespace"><a href="modules/Once.html">Once</a></li></ul></li></ul></div></details></nav>
+<nav class="tsd-navigation secondary menu-sticky">
+<ul>
+<li class="tsd-kind-enum"><a href="enums/ComponentType.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-enum)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-8-path"></rect><path d="M9.45 16V7.24H14.49V8.224H10.518V10.936H14.07V11.908H10.518V15.016H14.49V16H9.45Z" fill="var(--color-text)" id="icon-8-text"></path></svg>Component<wbr/>Type</a></li>
+<li class="tsd-kind-enum"><a href="enums/SimpleCommandOptionType.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg>Simple<wbr/>Command<wbr/>Option<wbr/>Type</a></li>
+<li class="tsd-kind-enum"><a href="enums/SimpleCommandParseType.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-8-path"></use><use href="#icon-8-text"></use></svg>Simple<wbr/>Command<wbr/>Parse<wbr/>Type</a></li>
+<li class="tsd-kind-class tsd-is-external"><a href="classes/AbstractConfigurableDependencyInjector.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-128-path"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)" id="icon-128-text"></path></svg>Abstract<wbr/>Configurable<wbr/>Dependency<wbr/>Injector</a></li>
+<li class="tsd-kind-class"><a href="classes/ApplicationCommandMixin.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Application<wbr/>Command<wbr/>Mixin</a></li>
+<li class="tsd-kind-class"><a href="classes/Client.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Client</a></li>
+<li class="tsd-kind-class"><a href="classes/DApplicationCommand.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>DApplication<wbr/>Command</a></li>
+<li class="tsd-kind-class"><a href="classes/DApplicationCommandGroup.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>DApplication<wbr/>Command<wbr/>Group</a></li>
+<li class="tsd-kind-class"><a href="classes/DApplicationCommandOption.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>DApplication<wbr/>Command<wbr/>Option</a></li>
+<li class="tsd-kind-class"><a href="classes/DApplicationCommandOptionChoice.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>DApplication<wbr/>Command<wbr/>Option<wbr/>Choice</a></li>
+<li class="tsd-kind-class"><a href="classes/DComponent.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>DComponent</a></li>
+<li class="tsd-kind-class"><a href="classes/DDiscord.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>DDiscord</a></li>
+<li class="tsd-kind-class"><a href="classes/DGuard.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>DGuard</a></li>
+<li class="tsd-kind-class tsd-is-external"><a href="classes/DIService.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>DIService</a></li>
+<li class="tsd-kind-class"><a href="classes/DOn.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>DOn</a></li>
+<li class="tsd-kind-class"><a href="classes/DReaction.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>DReaction</a></li>
+<li class="tsd-kind-class"><a href="classes/DSimpleCommand.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>DSimple<wbr/>Command</a></li>
+<li class="tsd-kind-class"><a href="classes/DSimpleCommandOption.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>DSimple<wbr/>Command<wbr/>Option</a></li>
+<li class="tsd-kind-class tsd-is-external"><a href="classes/Decorator.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Decorator</a></li>
+<li class="tsd-kind-class tsd-is-external"><a href="classes/DecoratorUtils.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Decorator<wbr/>Utils</a></li>
+<li class="tsd-kind-class"><a href="classes/MetadataStorage.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Metadata<wbr/>Storage</a></li>
+<li class="tsd-kind-class tsd-is-external"><a href="classes/Modifier.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Modifier</a></li>
+<li class="tsd-kind-class"><a href="classes/SimpleCommandMessage.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Simple<wbr/>Command<wbr/>Message</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/ApplicationCommandOptionChoiceDataEx.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-256-path"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)" id="icon-256-text"></path></svg>Application<wbr/>Command<wbr/>Option<wbr/>Choice<wbr/>Data<wbr/>Ex</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/ClientOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Client<wbr/>Options</a></li>
+<li class="tsd-kind-interface tsd-is-external"><a href="interfaces/IDependencyRegistryEngine.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>IDependency<wbr/>Registry<wbr/>Engine</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/SimpleCommandConfig.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Simple<wbr/>Command<wbr/>Config</a></li>
+<li class="tsd-kind-type-alias"><a href="types/ApplicationCommandDataEx.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-4194304-path"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)" id="icon-4194304-text"></path></svg>Application<wbr/>Command<wbr/>Data<wbr/>Ex</a></li>
+<li class="tsd-kind-type-alias"><a href="types/ApplicationCommandOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Application<wbr/>Command<wbr/>Options</a></li>
+<li class="tsd-kind-type-alias"><a href="types/ArgSplitter.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Arg<wbr/>Splitter</a></li>
+<li class="tsd-kind-type-alias"><a href="types/ArgsOf.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Args<wbr/>Of</a></li>
+<li class="tsd-kind-type-alias"><a href="types/Awaitable.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Awaitable</a></li>
+<li class="tsd-kind-type-alias tsd-is-external"><a href="types/ClassDecoratorEx.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Class<wbr/>Decorator<wbr/>Ex</a></li>
+<li class="tsd-kind-type-alias tsd-is-external"><a href="types/ClassMethodDecorator.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Class<wbr/>Method<wbr/>Decorator</a></li>
+<li class="tsd-kind-type-alias"><a href="types/ComponentOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Component<wbr/>Options</a></li>
+<li class="tsd-kind-type-alias"><a href="types/EventOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Event<wbr/>Options</a></li>
+<li class="tsd-kind-type-alias"><a href="types/ForbidCharacter.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Forbid<wbr/>Character</a></li>
+<li class="tsd-kind-type-alias"><a href="types/GuardFunction.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Guard<wbr/>Function</a></li>
+<li class="tsd-kind-type-alias"><a href="types/IGuild.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>IGuild</a></li>
+<li class="tsd-kind-type-alias"><a href="types/ILogger.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>ILogger</a></li>
+<li class="tsd-kind-type-alias"><a href="types/IPrefix.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>IPrefix</a></li>
+<li class="tsd-kind-type-alias"><a href="types/IPrefixResolver.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>IPrefix<wbr/>Resolver</a></li>
+<li class="tsd-kind-type-alias"><a href="types/ISimpleCommandByName.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>ISimple<wbr/>Command<wbr/>By<wbr/>Name</a></li>
+<li class="tsd-kind-type-alias"><a href="types/ITriggerEventData.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>ITrigger<wbr/>Event<wbr/>Data</a></li>
+<li class="tsd-kind-type-alias"><a href="types/InitCommandOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Init<wbr/>Command<wbr/>Options</a></li>
+<li class="tsd-kind-type-alias tsd-is-external"><a href="types/InstanceOf.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Instance<wbr/>Of</a></li>
+<li class="tsd-kind-type-alias tsd-is-external"><a href="types/MethodDecoratorEx.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Method<wbr/>Decorator<wbr/>Ex</a></li>
+<li class="tsd-kind-type-alias tsd-is-external"><a href="types/ModifyFunction.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Modify<wbr/>Function</a></li>
+<li class="tsd-kind-type-alias"><a href="types/Next.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Next</a></li>
+<li class="tsd-kind-type-alias"><a href="types/NotEmpty.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Not<wbr/>Empty</a></li>
+<li class="tsd-kind-type-alias"><a href="types/NotEmptyCheck.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Not<wbr/>Empty<wbr/>Check</a></li>
+<li class="tsd-kind-type-alias tsd-is-external"><a href="types/ParameterDecoratorEx.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Parameter<wbr/>Decorator<wbr/>Ex</a></li>
+<li class="tsd-kind-type-alias tsd-is-external"><a href="types/PropertyDecorator.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Property<wbr/>Decorator</a></li>
+<li class="tsd-kind-type-alias"><a href="types/ReactionOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Reaction<wbr/>Options</a></li>
+<li class="tsd-kind-type-alias"><a href="types/RestArgsOf.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Rest<wbr/>Args<wbr/>Of</a></li>
+<li class="tsd-kind-type-alias"><a href="types/RestEventOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Rest<wbr/>Event<wbr/>Options</a></li>
+<li class="tsd-kind-type-alias"><a href="types/SimpleCommandOptionOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Simple<wbr/>Command<wbr/>Option<wbr/>Options</a></li>
+<li class="tsd-kind-type-alias"><a href="types/SimpleCommandOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Simple<wbr/>Command<wbr/>Options</a></li>
+<li class="tsd-kind-type-alias"><a href="types/SimpleOptionType.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Simple<wbr/>Option<wbr/>Type</a></li>
+<li class="tsd-kind-type-alias"><a href="types/SlashAutoCompleteOption.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Slash<wbr/>Auto<wbr/>Complete<wbr/>Option</a></li>
+<li class="tsd-kind-type-alias"><a href="types/SlashChoiceType.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Slash<wbr/>Choice<wbr/>Type</a></li>
+<li class="tsd-kind-type-alias"><a href="types/SlashGroupBase.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Slash<wbr/>Group<wbr/>Base</a></li>
+<li class="tsd-kind-type-alias"><a href="types/SlashGroupOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Slash<wbr/>Group<wbr/>Options</a></li>
+<li class="tsd-kind-type-alias"><a href="types/SlashGroupRoot.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Slash<wbr/>Group<wbr/>Root</a></li>
+<li class="tsd-kind-type-alias"><a href="types/SlashGroupSubRoot.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Slash<wbr/>Group<wbr/>Sub<wbr/>Root</a></li>
+<li class="tsd-kind-type-alias"><a href="types/SlashOptionAutoCompleteOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Slash<wbr/>Option<wbr/>Auto<wbr/>Complete<wbr/>Options</a></li>
+<li class="tsd-kind-type-alias"><a href="types/SlashOptionBase.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Slash<wbr/>Option<wbr/>Base</a></li>
+<li class="tsd-kind-type-alias"><a href="types/SlashOptionBaseOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Slash<wbr/>Option<wbr/>Base<wbr/>Options</a></li>
+<li class="tsd-kind-type-alias"><a href="types/SlashOptionChannelOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Slash<wbr/>Option<wbr/>Channel<wbr/>Options</a></li>
+<li class="tsd-kind-type-alias"><a href="types/SlashOptionNumberOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Slash<wbr/>Option<wbr/>Number<wbr/>Options</a></li>
+<li class="tsd-kind-type-alias"><a href="types/SlashOptionOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Slash<wbr/>Option<wbr/>Options</a></li>
+<li class="tsd-kind-type-alias"><a href="types/SlashOptionStringOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Slash<wbr/>Option<wbr/>String<wbr/>Options</a></li>
+<li class="tsd-kind-type-alias"><a href="types/SpecialCharacters.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Special<wbr/>Characters</a></li>
+<li class="tsd-kind-type-alias"><a href="types/TruncateTo32.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Truncate<wbr/>To32</a></li>
+<li class="tsd-kind-type-alias"><a href="types/VName.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>VName</a></li>
+<li class="tsd-kind-type-alias"><a href="types/VerifyName.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Verify<wbr/>Name</a></li>
+<li class="tsd-kind-type-alias"><a href="types/WhitelistWords.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Whitelist<wbr/>Words</a></li>
+<li class="tsd-kind-variable"><a href="variables/SpecialCharactersList.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-variable)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-32-path"></rect><path d="M11.106 16L8.85 7.24H9.966L11.454 13.192C11.558 13.608 11.646 13.996 11.718 14.356C11.79 14.708 11.842 14.976 11.874 15.16C11.906 14.976 11.954 14.708 12.018 14.356C12.09 13.996 12.178 13.608 12.282 13.192L13.758 7.24H14.85L12.582 16H11.106Z" fill="var(--color-text)" id="icon-32-text"></path></svg>Special<wbr/>Characters<wbr/>List</a></li>
+<li class="tsd-kind-variable tsd-is-external"><a href="variables/defaultDependencyRegistryEngine.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-32-path"></use><use href="#icon-32-text"></use></svg>default<wbr/>Dependency<wbr/>Registry<wbr/>Engine</a></li>
+<li class="tsd-kind-variable tsd-is-external"><a href="variables/tsyringeDependencyRegistryEngine.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-32-path"></use><use href="#icon-32-text"></use></svg>tsyringe<wbr/>Dependency<wbr/>Registry<wbr/>Engine</a></li>
+<li class="tsd-kind-variable tsd-is-external"><a href="variables/typeDiDependencyRegistryEngine.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-32-path"></use><use href="#icon-32-text"></use></svg>type<wbr/>Di<wbr/>Dependency<wbr/>Registry<wbr/>Engine</a></li>
+<li class="tsd-kind-function"><a href="functions/Bot.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-function)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-64-path"></rect><path d="M9.39 16V7.24H14.55V8.224H10.446V11.128H14.238V12.112H10.47V16H9.39Z" fill="var(--color-text)" id="icon-64-text"></path></svg>Bot</a></li>
+<li class="tsd-kind-function"><a href="functions/ButtonComponent.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>Button<wbr/>Component</a></li>
+<li class="tsd-kind-function"><a href="functions/ContextMenu.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>Context<wbr/>Menu</a></li>
+<li class="tsd-kind-function"><a href="functions/Discord.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>Discord</a></li>
+<li class="tsd-kind-function"><a href="functions/Guard.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>Guard</a></li>
+<li class="tsd-kind-function"><a href="functions/Guild.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>Guild</a></li>
+<li class="tsd-kind-function"><a href="functions/ModalComponent.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>Modal<wbr/>Component</a></li>
+<li class="tsd-kind-function"><a href="functions/On-1.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>On</a></li>
+<li class="tsd-kind-function"><a href="functions/Once-1.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>Once</a></li>
+<li class="tsd-kind-function"><a href="functions/Reaction.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>Reaction</a></li>
+<li class="tsd-kind-function"><a href="functions/RecursivelyMatchField.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>Recursively<wbr/>Match<wbr/>Field</a></li>
+<li class="tsd-kind-function"><a href="functions/SelectMenuComponent.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>Select<wbr/>Menu<wbr/>Component</a></li>
+<li class="tsd-kind-function"><a href="functions/SimpleCommand.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>Simple<wbr/>Command</a></li>
+<li class="tsd-kind-function"><a href="functions/SimpleCommandOption.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>Simple<wbr/>Command<wbr/>Option</a></li>
+<li class="tsd-kind-function"><a href="functions/Slash.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>Slash</a></li>
+<li class="tsd-kind-function"><a href="functions/SlashChoice.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>Slash<wbr/>Choice</a></li>
+<li class="tsd-kind-function"><a href="functions/SlashGroup.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>Slash<wbr/>Group</a></li>
+<li class="tsd-kind-function"><a href="functions/SlashNameValidator.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>Slash<wbr/>Name<wbr/>Validator</a></li>
+<li class="tsd-kind-function"><a href="functions/SlashOption.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>Slash<wbr/>Option</a></li>
+<li class="tsd-kind-function"><a href="functions/isApplicationCommandEqual.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>is<wbr/>Application<wbr/>Command<wbr/>Equal</a></li>
+<li class="tsd-kind-function"><a href="functions/resolveIGuilds.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>resolveIGuilds</a></li></ul></nav></div></div>
+<div class="container tsd-generator">
+<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
+<div class="overlay"></div><script src="assets/main.js"></script></body></html>

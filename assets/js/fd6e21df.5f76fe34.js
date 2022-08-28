@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocusaurus=self.webpackChunkdocusaurus||[]).push([[109],{9417:(u,s,e)=>{e.r(s),e.d(s,{default:()=>c});var t=e(7294);function c(){return t.useEffect((()=>{window.location.href="https://github.com/discordx-ts/discordx/tree/dev"}),[]),null}}}]);

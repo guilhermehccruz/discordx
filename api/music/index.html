@@ -1,0 +1,336 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>Documentation</title><meta name="description" content="Documentation for Documentation"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container">
+<div class="table-cell" id="tsd-search" data-base=".">
+<div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
+<ul class="results">
+<li class="state loading">Preparing search index...</li>
+<li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">Documentation</a></div>
+<div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
+<div class="container container-main">
+<div class="col-8 col-content">
+<div class="tsd-page-title">
+<h2>Documentation</h2></div>
+<div class="tsd-panel tsd-typography"><div>
+  <p align="center">
+    <a href="https://discordx.js.org" target="_blank" rel="nofollow">
+      <img src="https://discordx.js.org/discordx.svg" width="546" />
+    </a>
+  </p>
+  <div align="center" class="badge-container">
+    <a href="https://discordx.js.org/discord"
+      ><img
+        src="https://img.shields.io/discord/874802018361950248?color=5865F2&logo=discord&logoColor=white"
+        alt="Discord server"
+    /></a>
+    <a href="https://www.npmjs.com/package/@discordx/music"
+      ><img
+        src="https://img.shields.io/npm/v/@discordx/music.svg?maxAge=3600"
+        alt="NPM version"
+    /></a>
+    <a href="https://www.npmjs.com/package/@discordx/music"
+      ><img
+        src="https://img.shields.io/npm/dt/@discordx/music.svg?maxAge=3600"
+        alt="NPM downloads"
+    /></a>
+    <a href="https://github.com/discordx-ts/discordx/actions"
+      ><img
+        src="https://github.com/discordx-ts/discordx/workflows/Build/badge.svg"
+        alt="Build status"
+    /></a>
+    <a href="https://www.paypal.me/vijayxmeena"
+      ><img
+        src="https://img.shields.io/badge/donate-paypal-F96854.svg"
+        alt="paypal"
+    /></a>
+  </div>
+  <p align="center">
+    <b> Create a discord bot with TypeScript and Decorators! </b>
+  </p>
+</div>
+
+
+<a href="#📖-introduction" id="📖-introduction" style="color: inherit; text-decoration: none;">
+  <h1>📖 Introduction</h1>
+</a>
+<p>A powerful discord music library written in <a href="https://www.typescriptlang.org">TypeScript</a> for <a href="https://nodejs.org">Node.js</a>. Support youtube links.</p>
+
+<a href="#💻-installation" id="💻-installation" style="color: inherit; text-decoration: none;">
+  <h1>💻 Installation</h1>
+</a>
+<p>Version 16.6.0 or newer of Node.js is required</p>
+<blockquote>
+<p>Ensure that <a href="https://www.npmjs.com/package/discord.js">discord.js</a> and <a href="https://www.npmjs.com/package/@discordjs/voice">@discordjs/voice</a> have been installed before installing this library</p>
+</blockquote>
+<pre><code><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-0">install</span><span class="hl-1"> @</span><span class="hl-0">discordx</span><span class="hl-1">/</span><span class="hl-0">music</span><br/><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-0">add</span><span class="hl-1"> @</span><span class="hl-0">discordx</span><span class="hl-1">/</span><span class="hl-0">music</span>
+</code></pre>
+
+<a href="#🤖-bot-examples" id="🤖-bot-examples" style="color: inherit; text-decoration: none;">
+  <h1>🤖 Bot Examples</h1>
+</a>
+<blockquote>
+<p><strong><a href="https://github.com/oceanroleplay/discord-music-bot">discord-music-bot</a></strong> from <a href="https://github.com/oceanroleplay">@oceanroleplay</a></p>
+</blockquote>
+<p><strong>Note:</strong> Create a pull request to include your bot in the example list.</p>
+
+<a href="#define-new-player" id="define-new-player" style="color: inherit; text-decoration: none;">
+  <h1>Define new player</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">player</span><span class="hl-1"> = </span><span class="hl-2">new</span><span class="hl-1"> </span><span class="hl-4">Player</span><span class="hl-1">();</span>
+</code></pre>
+
+<a href="#get-queue-for-guild" id="get-queue-for-guild" style="color: inherit; text-decoration: none;">
+  <h1>Get queue for guild</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">queue</span><span class="hl-1"> = </span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">queue</span><span class="hl-1">(</span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-0">guild</span><span class="hl-1">);</span>
+</code></pre>
+
+<a href="#join-voice-server" id="join-voice-server" style="color: inherit; text-decoration: none;">
+  <h1>Join voice server</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-5">await</span><span class="hl-1"> </span><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-4">join</span><span class="hl-1">(</span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-0">member</span><span class="hl-1">.</span><span class="hl-0">voice</span><span class="hl-1">.</span><span class="hl-0">channel</span><span class="hl-1">);</span>
+</code></pre>
+
+<a href="#play-youtube-song" id="play-youtube-song" style="color: inherit; text-decoration: none;">
+  <h1>Play youtube song</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">status</span><span class="hl-1"> = </span><span class="hl-5">await</span><span class="hl-1"> </span><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-4">play</span><span class="hl-1">(</span><span class="hl-0">songName</span><span class="hl-1">);</span><br/><span class="hl-5">if</span><span class="hl-1"> (!</span><span class="hl-0">status</span><span class="hl-1">) {</span><br/><span class="hl-1">  </span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-4">followUp</span><span class="hl-1">(</span><span class="hl-6">&quot;The song could not be found&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">} </span><span class="hl-5">else</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-4">followUp</span><span class="hl-1">(</span><span class="hl-6">&quot;The requested song is being played&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">}</span>
+</code></pre>
+
+<a href="#play-youtube-playlist" id="play-youtube-playlist" style="color: inherit; text-decoration: none;">
+  <h1>Play youtube playlist</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">status</span><span class="hl-1"> = </span><span class="hl-5">await</span><span class="hl-1"> </span><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-4">playlist</span><span class="hl-1">(</span><span class="hl-0">playlistLink</span><span class="hl-1">);</span><br/><span class="hl-5">if</span><span class="hl-1"> (!</span><span class="hl-0">status</span><span class="hl-1">) {</span><br/><span class="hl-1">  </span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-4">followUp</span><span class="hl-1">(</span><span class="hl-6">&quot;The playlist could not be found&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">} </span><span class="hl-5">else</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-0">interaction</span><span class="hl-1">.</span><span class="hl-4">followUp</span><span class="hl-1">(</span><span class="hl-6">&quot;playing requested playlist&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">}</span>
+</code></pre>
+
+<a href="#get-voice-config-data" id="get-voice-config-data" style="color: inherit; text-decoration: none;">
+  <h1>Get voice config data</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">audioPlayer</span><span class="hl-1"> = </span><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-0">audioPlayer</span><span class="hl-1">;</span><br/><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">voiceConnection</span><span class="hl-1"> = </span><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-0">voiceConnection</span><span class="hl-1">;</span><br/><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">voiceChannelId</span><span class="hl-1"> = </span><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-0">voiceChannelId</span><span class="hl-1">;</span><br/><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">voiceGroup</span><span class="hl-1"> = </span><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-0">voiceGroup</span><span class="hl-1">;</span><br/><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">voiceGuildId</span><span class="hl-1"> = </span><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-0">voiceGuildId</span><span class="hl-1">;</span>
+</code></pre>
+
+<a href="#get-tracks" id="get-tracks" style="color: inherit; text-decoration: none;">
+  <h1>Get tracks</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">tracks</span><span class="hl-1"> = </span><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-0">tracks</span><span class="hl-1">;</span>
+</code></pre>
+
+<a href="#get-loop-mode" id="get-loop-mode" style="color: inherit; text-decoration: none;">
+  <h1>Get loop mode</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">state</span><span class="hl-1"> = </span><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-0">loop</span><span class="hl-1">;</span>
+</code></pre>
+
+<a href="#set-loop-mode" id="set-loop-mode" style="color: inherit; text-decoration: none;">
+  <h1>Set loop mode</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-4">setLoop</span><span class="hl-1">(</span><span class="hl-2">true</span><span class="hl-1"> | </span><span class="hl-2">false</span><span class="hl-1">);</span>
+</code></pre>
+
+<a href="#get-repeat-mode" id="get-repeat-mode" style="color: inherit; text-decoration: none;">
+  <h1>Get repeat mode</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">state</span><span class="hl-1"> = </span><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-0">repeat</span><span class="hl-1">;</span>
+</code></pre>
+
+<a href="#set-repeat-mode" id="set-repeat-mode" style="color: inherit; text-decoration: none;">
+  <h1>Set repeat mode</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-4">setRepeat</span><span class="hl-1">(</span><span class="hl-2">true</span><span class="hl-1"> | </span><span class="hl-2">false</span><span class="hl-1">);</span>
+</code></pre>
+
+<a href="#pause-music" id="pause-music" style="color: inherit; text-decoration: none;">
+  <h1>Pause music</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-4">pause</span><span class="hl-1">();</span>
+</code></pre>
+
+<a href="#resume-music" id="resume-music" style="color: inherit; text-decoration: none;">
+  <h1>Resume music</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-4">resume</span><span class="hl-1">();</span>
+</code></pre>
+
+<a href="#skip-music" id="skip-music" style="color: inherit; text-decoration: none;">
+  <h1>Skip music</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-4">skip</span><span class="hl-1">();</span>
+</code></pre>
+
+<a href="#leave-voice-channel" id="leave-voice-channel" style="color: inherit; text-decoration: none;">
+  <h1>Leave voice channel</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-4">leave</span><span class="hl-1">();</span>
+</code></pre>
+
+<a href="#mixshuffle-tracks" id="mixshuffle-tracks" style="color: inherit; text-decoration: none;">
+  <h1>Mix/Shuffle tracks</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-4">mix</span><span class="hl-1">();</span>
+</code></pre>
+
+<a href="#get-playback-duration" id="get-playback-duration" style="color: inherit; text-decoration: none;">
+  <h1>Get playback duration</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-0">playbackDuration</span><span class="hl-1">;</span>
+</code></pre>
+
+<a href="#get-volume" id="get-volume" style="color: inherit; text-decoration: none;">
+  <h1>Get volume</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-0">volume</span><span class="hl-1">;</span>
+</code></pre>
+
+<a href="#set-volume" id="set-volume" style="color: inherit; text-decoration: none;">
+  <h1>Set volume</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-4">setVolume</span><span class="hl-1">(</span><span class="hl-0">volume</span><span class="hl-1">: </span><span class="hl-0">number</span><span class="hl-1">);</span>
+</code></pre>
+
+<a href="#seek-current-track" id="seek-current-track" style="color: inherit; text-decoration: none;">
+  <h1>Seek current track</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-4">seek</span><span class="hl-1">(</span><span class="hl-0">time</span><span class="hl-1">: </span><span class="hl-0">number</span><span class="hl-1">);</span>
+</code></pre>
+
+<a href="#clear-queue" id="clear-queue" style="color: inherit; text-decoration: none;">
+  <h1>Clear queue</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-4">clearTracks</span><span class="hl-1">();</span>
+</code></pre>
+
+<a href="#remove-specific-tracks" id="remove-specific-tracks" style="color: inherit; text-decoration: none;">
+  <h1>Remove specific tracks</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-4">removeTracks</span><span class="hl-1">([</span><span class="hl-7">1</span><span class="hl-1">, </span><span class="hl-7">3</span><span class="hl-1">, </span><span class="hl-7">5</span><span class="hl-1">]);</span>
+</code></pre>
+
+<a href="#get-total-tracks" id="get-total-tracks" style="color: inherit; text-decoration: none;">
+  <h1>Get total tracks</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">total</span><span class="hl-1"> = </span><span class="hl-0">queue</span><span class="hl-1">.</span><span class="hl-0">size</span><span class="hl-1">;</span>
+</code></pre>
+
+<a href="#events" id="events" style="color: inherit; text-decoration: none;">
+  <h1>Events</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;onError&quot;</span><span class="hl-1">, </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">);</span><br/><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;onFinish&quot;</span><span class="hl-1">, </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">);</span><br/><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;onStart&quot;</span><span class="hl-1">, </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">);</span><br/><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;onLoop&quot;</span><span class="hl-1">, </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">);</span><br/><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;onFinishPlayback&quot;</span><span class="hl-1">, </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">);</span><br/><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;onRepeat&quot;</span><span class="hl-1">, </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">);</span><br/><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;onSkip&quot;</span><span class="hl-1">, </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">);</span><br/><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;onPause&quot;</span><span class="hl-1">, </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">);</span><br/><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;onResume&quot;</span><span class="hl-1">, </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">);</span><br/><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;onTrackAdd&quot;</span><span class="hl-1">, </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">);</span><br/><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;onLoopEnabled&quot;</span><span class="hl-1">, </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">);</span><br/><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;onLoopDisabled&quot;</span><span class="hl-1">, </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">);</span><br/><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;onRepeatEnabled&quot;</span><span class="hl-1">, </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">);</span><br/><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;onRepeatDisabled&quot;</span><span class="hl-1">, </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">);</span><br/><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;onMix&quot;</span><span class="hl-1">, </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">);</span><br/><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;onVolumeUpdate&quot;</span><span class="hl-1">, </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">);</span><br/><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;onSeek&quot;</span><span class="hl-1">, </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">);</span><br/><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;onJoin&quot;</span><span class="hl-1">, </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">);</span><br/><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;onLeave&quot;</span><span class="hl-1">, </span><span class="hl-0">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">);</span>
+</code></pre>
+
+<a href="#custom-queue" id="custom-queue" style="color: inherit; text-decoration: none;">
+  <h1>Custom queue</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-2">class</span><span class="hl-1"> </span><span class="hl-8">MyQueue</span><span class="hl-1"> </span><span class="hl-2">extends</span><span class="hl-1"> </span><span class="hl-8">Queue</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-0">customProp</span><span class="hl-1"> = </span><span class="hl-6">&quot;custom queue&quot;</span><span class="hl-1">;</span><br/><span class="hl-1">}</span>
+</code></pre>
+<p>Tell the player to use this custom queue</p>
+<pre><code class="language-ts"><span class="hl-2">class</span><span class="hl-1"> </span><span class="hl-8">MyQueue</span><span class="hl-1"> </span><span class="hl-2">extends</span><span class="hl-1"> </span><span class="hl-8">Queue</span><span class="hl-1"> {}</span><br/><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">queue</span><span class="hl-1">(</span><span class="hl-0">guild</span><span class="hl-1">, () </span><span class="hl-2">=&gt;</span><span class="hl-1"> </span><span class="hl-2">new</span><span class="hl-1"> </span><span class="hl-4">MyQueue</span><span class="hl-1">(</span><span class="hl-2">this</span><span class="hl-1">.</span><span class="hl-0">player</span><span class="hl-1">, </span><span class="hl-0">guild</span><span class="hl-1">));</span>
+</code></pre>
+
+<a href="#custom-player" id="custom-player" style="color: inherit; text-decoration: none;">
+  <h1>Custom player</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-2">class</span><span class="hl-1"> </span><span class="hl-8">MyPlayer</span><span class="hl-1"> </span><span class="hl-2">extends</span><span class="hl-1"> </span><span class="hl-8">Player</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-9">// custom player</span><br/><span class="hl-1">}</span>
+</code></pre>
+<p>Let your queue know about custom player</p>
+<pre><code class="language-ts"><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">myQueue</span><span class="hl-1">: </span><span class="hl-8">Queue</span><span class="hl-1">&lt;</span><span class="hl-8">MyPlayer</span><span class="hl-1">&gt; = </span><span class="hl-2">new</span><span class="hl-1"> </span><span class="hl-4">Queue</span><span class="hl-1">(</span><span class="hl-2">this</span><span class="hl-1">, </span><span class="hl-0">guild</span><span class="hl-1">);</span>
+</code></pre>
+
+<a href="#lava-player" id="lava-player" style="color: inherit; text-decoration: none;">
+  <h1>Lava Player</h1>
+</a>
+
+<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
+  <h1>Getting Started</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">node</span><span class="hl-1"> = </span><span class="hl-2">new</span><span class="hl-1"> </span><span class="hl-0">Lava</span><span class="hl-1">.</span><span class="hl-4">Node</span><span class="hl-1">({</span><br/><span class="hl-1">  </span><span class="hl-0">host:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">address:</span><span class="hl-1"> </span><span class="hl-0">process</span><span class="hl-1">.</span><span class="hl-0">env</span><span class="hl-1">.</span><span class="hl-3">LAVA_HOST</span><span class="hl-1"> ?? </span><span class="hl-6">&quot;&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">port:</span><span class="hl-1"> </span><span class="hl-4">Number</span><span class="hl-1">(</span><span class="hl-0">process</span><span class="hl-1">.</span><span class="hl-0">env</span><span class="hl-1">.</span><span class="hl-3">LAVA_PORT</span><span class="hl-1">) ?? </span><span class="hl-7">2333</span><span class="hl-1">,</span><br/><span class="hl-1">  },</span><br/><br/><span class="hl-1">  </span><span class="hl-9">// your Lavalink password</span><br/><span class="hl-1">  </span><span class="hl-0">password:</span><span class="hl-1"> </span><span class="hl-0">process</span><span class="hl-1">.</span><span class="hl-0">env</span><span class="hl-1">.</span><span class="hl-3">LAVA_PASSWORD</span><span class="hl-1"> ?? </span><span class="hl-6">&quot;&quot;</span><span class="hl-1">,</span><br/><br/><span class="hl-1">  </span><span class="hl-4">send</span><span class="hl-1">(</span><span class="hl-0">guildId</span><span class="hl-1">, </span><span class="hl-0">packet</span><span class="hl-1">) {</span><br/><span class="hl-1">    </span><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">guild</span><span class="hl-1"> = </span><span class="hl-0">client</span><span class="hl-1">.</span><span class="hl-0">guilds</span><span class="hl-1">.</span><span class="hl-0">cache</span><span class="hl-1">.</span><span class="hl-4">get</span><span class="hl-1">(</span><span class="hl-0">guildId</span><span class="hl-1">);</span><br/><span class="hl-1">    </span><span class="hl-5">if</span><span class="hl-1"> (</span><span class="hl-0">guild</span><span class="hl-1">) {</span><br/><span class="hl-1">      </span><span class="hl-0">guild</span><span class="hl-1">.</span><span class="hl-0">shard</span><span class="hl-1">.</span><span class="hl-4">send</span><span class="hl-1">(</span><span class="hl-0">packet</span><span class="hl-1">);</span><br/><span class="hl-1">    }</span><br/><span class="hl-1">  },</span><br/><span class="hl-1">  </span><span class="hl-0">shardCount:</span><span class="hl-1"> </span><span class="hl-7">0</span><span class="hl-1">, </span><span class="hl-9">// the total number of shards that your bot is running (optional, useful if you&#39;re load balancing)</span><br/><span class="hl-1">  </span><span class="hl-0">userId:</span><span class="hl-1"> </span><span class="hl-0">client</span><span class="hl-1">.</span><span class="hl-0">user</span><span class="hl-1">?.</span><span class="hl-0">id</span><span class="hl-1"> ?? </span><span class="hl-6">&quot;&quot;</span><span class="hl-1">, </span><span class="hl-9">// the user id of your bot</span><br/><span class="hl-1">});</span><br/><br/><span class="hl-0">client</span><span class="hl-1">.</span><span class="hl-0">ws</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;VOICE_STATE_UPDATE&quot;</span><span class="hl-1">, (</span><span class="hl-0">data</span><span class="hl-1">: </span><span class="hl-8">Lava</span><span class="hl-1">.</span><span class="hl-8">VoiceStateUpdate</span><span class="hl-1">) </span><span class="hl-2">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-0">node</span><span class="hl-1">.</span><span class="hl-4">voiceStateUpdate</span><span class="hl-1">(</span><span class="hl-0">data</span><span class="hl-1">);</span><br/><span class="hl-1">});</span><br/><br/><span class="hl-0">client</span><span class="hl-1">.</span><span class="hl-0">ws</span><span class="hl-1">.</span><span class="hl-4">on</span><span class="hl-1">(</span><span class="hl-6">&quot;VOICE_SERVER_UPDATE&quot;</span><span class="hl-1">, (</span><span class="hl-0">data</span><span class="hl-1">: </span><span class="hl-8">Lava</span><span class="hl-1">.</span><span class="hl-8">VoiceServerUpdate</span><span class="hl-1">) </span><span class="hl-2">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-0">node</span><span class="hl-1">.</span><span class="hl-4">voiceServerUpdate</span><span class="hl-1">(</span><span class="hl-0">data</span><span class="hl-1">);</span><br/><span class="hl-1">});</span>
+</code></pre>
+
+<a href="#get-guild-player" id="get-guild-player" style="color: inherit; text-decoration: none;">
+  <h1>Get Guild Player</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">player</span><span class="hl-1"> = </span><span class="hl-0">node</span><span class="hl-1">.</span><span class="hl-0">players</span><span class="hl-1">.</span><span class="hl-4">get</span><span class="hl-1">(</span><span class="hl-6">&quot;guild id&quot;</span><span class="hl-1">);</span>
+</code></pre>
+
+<a href="#join-voice-channel" id="join-voice-channel" style="color: inherit; text-decoration: none;">
+  <h1>Join Voice Channel</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-5">await</span><span class="hl-1"> </span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">join</span><span class="hl-1">(</span><span class="hl-6">&quot;channel id&quot;</span><span class="hl-1">);</span>
+</code></pre>
+
+<a href="#play-track" id="play-track" style="color: inherit; text-decoration: none;">
+  <h1>Play Track</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">res</span><span class="hl-1"> = </span><span class="hl-5">await</span><span class="hl-1"> </span><span class="hl-0">voice</span><span class="hl-1">.</span><span class="hl-4">load</span><span class="hl-1">(</span><span class="hl-6">&quot;ytsearch:monstercat&quot;</span><span class="hl-1">);</span><br/><span class="hl-5">await</span><span class="hl-1"> </span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">play</span><span class="hl-1">(</span><span class="hl-0">res</span><span class="hl-1">.</span><span class="hl-0">tracks</span><span class="hl-1">[</span><span class="hl-7">0</span><span class="hl-1">]);</span>
+</code></pre>
+
+<a href="#stop-music" id="stop-music" style="color: inherit; text-decoration: none;">
+  <h1>Stop Music</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-5">await</span><span class="hl-1"> </span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">stop</span><span class="hl-1">();</span><br/><span class="hl-9">// or, to destroy the player entirely</span><br/><span class="hl-5">await</span><span class="hl-1"> </span><span class="hl-0">player</span><span class="hl-1">.</span><span class="hl-4">destroy</span><span class="hl-1">();</span>
+</code></pre>
+
+<a href="#clustering" id="clustering" style="color: inherit; text-decoration: none;">
+  <h1>Clustering</h1>
+</a>
+<pre><code class="language-ts"><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-3">cluster</span><span class="hl-1"> = </span><span class="hl-2">new</span><span class="hl-1"> </span><span class="hl-0">Lava</span><span class="hl-1">.</span><span class="hl-4">Cluster</span><span class="hl-1">({</span><br/><span class="hl-1">  </span><span class="hl-0">nodes:</span><span class="hl-1"> [</span><br/><span class="hl-1">    </span><span class="hl-9">// node options here; see above</span><br/><span class="hl-1">  ],</span><br/><span class="hl-1">  </span><span class="hl-4">send</span><span class="hl-1">(</span><span class="hl-0">guildId</span><span class="hl-1">, </span><span class="hl-0">packet</span><span class="hl-1">) {</span><br/><span class="hl-1">    </span><span class="hl-9">// send to gateway; same as for single node usage</span><br/><span class="hl-1">  },</span><br/><span class="hl-1">  </span><span class="hl-4">filter</span><span class="hl-1">(</span><span class="hl-0">node</span><span class="hl-1">, </span><span class="hl-0">guildId</span><span class="hl-1">) {</span><br/><span class="hl-1">    </span><span class="hl-9">// optional</span><br/><span class="hl-1">    </span><span class="hl-9">// return a boolean indicating whether the given guild can be run on the given node</span><br/><span class="hl-1">    </span><span class="hl-9">// useful for limiting guilds to specific nodes (for instance, if you setup lavalink edge servers to minimize latency)</span><br/><span class="hl-1">    </span><span class="hl-9">// this must return true at least once for a given set of nodes, otherwise some methods may error</span><br/><span class="hl-1">  },</span><br/><span class="hl-1">});</span>
+</code></pre>
+
+<a href="#📜-documentation" id="📜-documentation" style="color: inherit; text-decoration: none;">
+  <h1>📜 Documentation</h1>
+</a>
+<ul>
+<li><a href="https://discordx.js.org">discordx.js.org</a></li>
+<li><a href="https://dev.to/oceanroleplay/series/14317">Tutorials (dev.to)</a></li>
+</ul>
+
+<a href="#☎️-need-help" id="☎️-need-help" style="color: inherit; text-decoration: none;">
+  <h1>☎️ Need help?</h1>
+</a>
+<ul>
+<li><a href="https://discordx.js.org/docs/faq">Check frequently asked questions</a></li>
+<li><a href="https://github.com/discordx-ts/discordx/tree/main/packages/discordx/examples">Check examples</a></li>
+<li>Ask in the community <a href="https://discordx.js.org/discord">Discord server</a></li>
+</ul>
+
+<a href="#💖-thank-you" id="💖-thank-you" style="color: inherit; text-decoration: none;">
+  <h1>💖 Thank you</h1>
+</a>
+<p>You can support <a href="https://www.npmjs.com/package/discordx">discordx</a> by giving it a <a href="https://github.com/discordx-ts/discordx">GitHub</a> star.</p>
+</div></div>
+<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+<div class="tsd-navigation settings">
+<details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility">
+<h4 class="uppercase">Member Visibility</h4><form>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-private" name="private"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Private</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></form></div>
+<div class="tsd-theme-toggle">
+<h4 class="uppercase">Theme</h4><select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<nav class="tsd-navigation primary">
+<details class="tsd-index-accordion" open><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Modules</h3></summary>
+<div class="tsd-accordion-details">
+<ul>
+<li class="current selected"><a href="modules.html">Documentation</a>
+<ul></ul></li></ul></div></details></nav>
+<nav class="tsd-navigation secondary menu-sticky">
+<ul>
+<li class="tsd-kind-enum"><a href="enums/PlayerErrors.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-enum)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-8-path"></rect><path d="M9.45 16V7.24H14.49V8.224H10.518V10.936H14.07V11.908H10.518V15.016H14.49V16H9.45Z" fill="var(--color-text)" id="icon-8-text"></path></svg>Player<wbr/>Errors</a></li>
+<li class="tsd-kind-class"><a href="classes/CustomTrack.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-128-path"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)" id="icon-128-text"></path></svg>Custom<wbr/>Track</a></li>
+<li class="tsd-kind-class"><a href="classes/Player.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Player</a></li>
+<li class="tsd-kind-class"><a href="classes/Queue.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Queue</a></li>
+<li class="tsd-kind-class"><a href="classes/Track.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Track</a></li>
+<li class="tsd-kind-class"><a href="classes/Util.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Util</a></li>
+<li class="tsd-kind-class"><a href="classes/YoutubeTrack.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>Youtube<wbr/>Track</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/ITrackOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-256-path"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)" id="icon-256-text"></path></svg>ITrack<wbr/>Options</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/PlayerEvents.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Player<wbr/>Events</a></li>
+<li class="tsd-kind-type-alias"><a href="types/CommonTrack.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-4194304-path"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)" id="icon-4194304-text"></path></svg>Common<wbr/>Track</a></li>
+<li class="tsd-kind-type-alias"><a href="types/PlayerEventArgOf.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>Player<wbr/>Event<wbr/>Arg<wbr/>Of</a></li>
+<li class="tsd-kind-function"><a href="functions/ytdl.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-function)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-64-path"></rect><path d="M9.39 16V7.24H14.55V8.224H10.446V11.128H14.238V12.112H10.47V16H9.39Z" fill="var(--color-text)" id="icon-64-text"></path></svg>ytdl</a></li></ul></nav></div></div>
+<div class="container tsd-generator">
+<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
+<div class="overlay"></div><script src="assets/main.js"></script></body></html>
